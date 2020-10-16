@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Module 2 Assignment</title>
+    <link rel="stylesheet" href="cssmod2.css" />
+    <style>
+        /*Desktop View*/
+        @media (min-width: 992px) {
+            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+                float: left;
+            }
+
+            .col-lg-1 {
+                width: 8.33%;
+            }
+
+            .col-lg-2 {
+                width: 16.66%;
+            }
+
+            .col-lg-3 {
+                width: 25%;
+            }
+
+            .col-lg-4 {
+                width: 33.33%;
+            }
+
+            .col-lg-5 {
+                width: 41.66%;
+            }
+
+            .col-lg-6 {
+                width: 50%;
+            }
+
+            .col-lg-7 {
+                width: 58.33%;
+            }
+
+            .col-lg-8 {
+                width: 66.66%;
+            }
+
+            .col-lg-9 {
+                width: 74.99%;
+            }
+
+            .col-lg-10 {
+                width: 83.33%;
+            }
+
+            .col-lg-11 {
+                width: 91.66%;
+            }
+
+            .col-lg-12 {
+                width: 100%;
+            }
+        }
+
+        /*Tablet View*/
+        @media (min-width: 768px) and (max-width: 991px) {
+            .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+                float: left;
+            }
+
+            .col-md-1 {
+                width: 8.33%;
+            }
+
+            .col-md-2 {
+                width: 16.66%;
+            }
+
+            .col-md-3 {
+                width: 25%;
+            }
+
+            .col-md-4 {
+                width: 33.33%;
+            }
+
+            .col-md-5 {
+                width: 41.66%;
+            }
+
+            .col-md-6 {
+                width: 50%;
+            }
+
+            .col-md-7 {
+                width: 58.33%;
+            }
+
+            .col-md-8 {
+                width: 66.66%;
+            }
+
+            .col-md-9 {
+                width: 74.99%;
+            }
+
+            .col-md-10 {
+                width: 83.33%;
+            }
+
+            .col-md-11 {
+                width: 91.66%;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+
+        /*Mobile View*/
+        @media (max-width: 767px) {
+            .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+                float: left;
+            }
+
+            .col-sm-1 {
+                width: 8.33%;
+            }
+
+            .col-sm-2 {
+                width: 16.66%;
+            }
+
+            .col-sm-3 {
+                width: 25%;
+            }
+
+            .col-sm-4 {
+                width: 33.33%;
+            }
+
+            .col-sm-5 {
+                width: 41.66%;
+            }
+
+            .col-sm-6 {
+                width: 50%;
+            }
+
+            .col-sm-7 {
+                width: 58.33%;
+            }
+
+            .col-sm-8 {
+                width: 66.66%;
+            }
+
+            .col-sm-9 {
+                width: 74.99%;
+            }
+
+            .col-sm-10 {
+                width: 83.33%;
+            }
+
+            .col-sm-11 {
+                width: 91.66%;
+            }
+
+            .col-sm-12 {
+                width: 100%;
+            }
+        }
+
+        .container{
+            position: relative;
+        }
+
+        /*Boxes*/
+        #p1 {
+            background-color: darkgray;
+            border: 3px solid darkblue;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            font-weight: bold;
+            color: black;
+            top: 0px;
+            left: 75%;
+            text-align: center;
+        }
+        #p2 {
+            background-color: dimgrey;
+            border: 3px solid purple;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            font-weight: bold;
+            color: black;
+            top: 0px;
+            left: 75%;
+            text-align: center;
+        }
+        #p3 {
+            background-color: slategrey;
+            border: 3px solid darkred;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            font-weight: bold;
+            color: black;
+            top: 0px;
+            left: 75%;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 style="color:ghostwhite">
+        The Memoirs of the 501st
+    </h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 container">
+            <p>
+                <br /><br /><br />
+                What I remember about the rise of the Empire is... is how quiet it was.During the waning hours of the Clone Wars, the 501st Legion was discreetly transferred back to Coruscant. It was a silent trip. We all knew what was about to happen, what we were about to do. Did we have any doubts? Any private, traitorous thoughts? Perhaps, but no one said a word. Not on the flight to Coruscant, not when Order 66 came down, and not when we marched into the Jedi Temple. Not a word.
+            </p>
+            <p id="p1">
+                Entry 1:
+                Empire
+            </p>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 container">
+            <p>
+                <br /><br /><br />
+                By the time we'd made our way to the molten surface of Mustafar, it was apparent that Dellso had been a busy little bug. All by his lonesome, he'd found a previously hidden droid factory, fired it up and cranked out his own private army of battle droids. Needless to say, this got the men of the 501st...a little hot under the helmet, and not just because of all that lava. Truth be told we'd all had our fill of those gear heads during the war, and we couldn't stomach the thought of going through another one. So we blew them up. Blew up the droids, blew up the factory, damn near blew up the planet.
+            </p>
+            <p id="p2">
+                Entry 2:
+                Mustafar
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 container">
+            <p>
+                <br /><br /><br />
+                When the Death Star was destroyed, about half of the 501st Legion was still in the hangar getting to their ships. Of those who made it out, another third were caught in the explosion. I'd fought with some of those men for over twenty years. Afterwards, those of us that survived hooked up with a nearby Imperial fleet making a retaliatory strike on the Rebel's base on Yavin IV. It wasn't the best thought out plan, but we were cut off from our leaders, tired, and operating on instinct. If not for our training, we probably would've never gotten past their orbital defenses.
+            </p>
+            <p id="p3">
+                Entry 3: <br />
+                Yavin IV
+            </p>
+        </div>
+    </div>
+</body>
+</html>
